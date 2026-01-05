@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manikanta Bandari | Data Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #0A66C2; /* LinkedIn Blue */
+            --dark-bg: #0f172a;       /* Dark Navy */
+            --light-text: #f8fafc;
+            --secondary-text: #94a3b8;
+            --card-bg: #1e293b;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--dark-bg); color: var(--light-text); line-height: 1.6; }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        ul { list-style: none; }
+
+        /* Container */
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+        /* Navigation */
+        nav { padding: 20px 0; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: 700; font-size: 1.2rem; }
+        .nav-links a { margin-left: 20px; color: var(--secondary-text); font-size: 0.9rem; }
+        .nav-links a:hover { color: var(--primary-color); }
+
+        /* Hero Section */
+        .hero { padding: 100px 0; text-align: center; }
+        .hero h1 { font-size: 3.5rem; font-weight: 700; margin-bottom: 20px; letter-spacing: -1px; }
+        .hero p { font-size: 1.2rem; color: var(--secondary-text); max-width: 600px; margin: 0 auto 40px; }
+        .hero-span { color: var(--primary-color); }
+        
+        /* Buttons */
+        .btn { padding: 12px 24px; border-radius: 6px; font-weight: 600; display: inline-block; margin: 0 10px; }
+        .btn-primary { background-color: var(--primary-color); color: white; }
+        .btn-primary:hover { opacity: 0.9; transform: translateY(-2px); }
+        .btn-outline { border: 1px solid var(--secondary-text); color: var(--light-text); }
+        .btn-outline:hover { border-color: var(--primary-color); color: var(--primary-color); }
+
+        /* Sections */
+        section { padding: 80px 0; }
+        .section-title { font-size: 2rem; margin-bottom: 40px; border-left: 4px solid var(--primary-color); padding-left: 15px; }
+
+        /* Experience Cards */
+        .experience-card { background: var(--card-bg); padding: 30px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #334155; }
+        .job-header { display: flex; justify-content: space-between; margin-bottom: 15px; flex-wrap: wrap; }
+        .job-title { font-size: 1.25rem; font-weight: 600; }
+        .company { color: var(--primary-color); font-weight: 500; }
+        .date { color: var(--secondary-text); font-size: 0.9rem; }
+        .job-desc li { margin-bottom: 10px; color: var(--secondary-text); position: relative; padding-left: 20px; }
+        .job-desc li::before { content: "▹"; position: absolute; left: 0; color: var(--primary-color); }
+
+        /* Skills Grid */
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+        .skill-category { background: var(--card-bg); padding: 25px; border-radius: 8px; }
+        .skill-category h3 { font-size: 1.1rem; margin-bottom: 15px; color: white; }
+        .skill-tag { display: inline-block; background: #0f172a; padding: 5px 10px; font-size: 0.85rem; border-radius: 4px; margin: 0 5px 5px 0; color: var(--secondary-text); border: 1px solid #334155; }
+
+        /* Footer */
+        footer { text-align: center; padding: 50px 0; border-top: 1px solid #334155; margin-top: 50px; }
+        .social-icons a { font-size: 1.5rem; margin: 0 15px; color: var(--secondary-text); }
+        .social-icons a:hover { color: white; }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .job-header { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="container">
+        <div class="logo">Manikanta.dev</div>
+        <div class="nav-links">
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero container">
+        <h1>Hi, I'm Manikanta.<br><span class="hero-span">I build scalable data pipelines.</span></h1>
+        <p>Senior Data Engineer specializing in Snowflake, AWS, and Legacy Migrations. Bridging the gap between traditional ETL and modern AI Architecture.</p>
+        <div>
+            <a href="YOUR_CALENDLY_LINK_HERE" class="btn btn-primary" target="_blank">
+                <i class="fas fa-coffee"></i> Book a Coffee Chat
+            </a>
+            <a href="https://github.com/YOUR_USERNAME" class="btn btn-outline" target="_blank">
+                <i class="fab fa-github"></i> View GitHub
+            </a>
+            <a href="Manikanta_Resume.pdf" class="btn btn-outline" target="_blank">
+                <i class="fas fa-download"></i> Resume
+            </a>
+        </div>
+    </section>
+
+    <section id="skills" class="container">
+        <h2 class="section-title">Technical Arsenal</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>☁️ Cloud & Core</h3>
+                <span class="skill-tag">Snowflake</span>
+                <span class="skill-tag">AWS (Glue, Lambda)</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">SQL</span>
+            </div>
+            <div class="skill-category">
+                <h3>🤖 AI & Engineering</h3>
+                <span class="skill-tag">RAG Pipelines</span>
+                <span class="skill-tag">LangChain</span>
+                <span class="skill-tag">Vector DBs</span>
+                <span class="skill-tag">Snowflake Cortex</span>
+            </div>
+            <div class="skill-category">
+                <h3>🔄 Data Movement</h3>
+                <span class="skill-tag">ETL/ELT</span>
+                <span class="skill-tag">Legacy Migration</span>
+                <span class="skill-tag">PySpark</span>
+                <span class="skill-tag">Kafka</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="container">
+        <h2 class="section-title">Experience</h2>
+
+        <div class="experience-card">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Cloud Data Engineer</div>
+                    <div class="company">Elevance Health (Anthem)</div>
+                </div>
+                <div class="date">Feb 2023 – Present</div>
+            </div>
+            <ul class="job-desc">
+                [cite_start]<li>Engineered scalable ETL pipelines migrating 1+ billion records from Teradata to Snowflake, reducing query latency by 40%[cite: 10].</li>
+                [cite_start]<li>Architected serverless orchestration workflows automating 50+ daily ingestions with 99.9% availability[cite: 11].</li>
+                [cite_start]<li>Orchestrated CMS regulatory data lifecycle, ensuring 100% data accuracy for Star Ratings submissions[cite: 12].</li>
+                [cite_start]<li>Developed automated data masking and tokenization workflows ensuring 100% HIPAA compliance[cite: 17].</li>
+            </ul>
+        </div>
+
+        <div class="experience-card">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Associate Data Engineer</div>
+                    <div class="company">Innominds Software</div>
+                </div>
+                <div class="date">Aug 2019 – July 2021</div>
+            </div>
+            <ul class="job-desc">
+                [cite_start]<li>Developed PySpark migration workflows converting 15+ legacy SQL modules into a cloud data lake[cite: 21].</li>
+                [cite_start]<li>Optimized PySpark ETL workloads, reducing cluster resource consumption by 30%[cite: 22].</li>
+                [cite_start]<li>Resolved production SSIS pipeline issues, maintaining 99% uptime for daily reporting[cite: 23].</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <footer>
+            <h2>Let's Connect</h2>
+            <p style="color: #94a3b8; margin-bottom: 20px;">Open to discussing Data Engineering, Cloud Architecture, and AI integration.</p>
+            <div class="social-icons">
+                <a href="https://linkedin.com/in/YOUR_PROFILE" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/YOUR_USERNAME" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:manikantabandari39@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p style="margin-top: 30px; font-size: 0.8rem; color: #475569;">© 2026 Manikanta Bandari</p>
+        </footer>
+    </section>
+
+</body>
+</html>
